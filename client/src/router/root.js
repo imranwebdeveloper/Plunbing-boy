@@ -33,7 +33,9 @@ export const router = createBrowserRouter([
         path: "services/:id",
         element: <Details />,
         loader: async ({ params }) =>
-          fetch(`https://plumboy.vercel.app/services/${params.id}`),
+          fetch(
+            `https://plumboy-server-three.vercel.app/services/${params.id}`
+          ),
       },
       {
         path: "login",

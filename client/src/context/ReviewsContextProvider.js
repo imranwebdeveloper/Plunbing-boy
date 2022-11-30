@@ -8,12 +8,15 @@ const ReviewsContextProvider = ({ children }) => {
   // const [refresh, setRefresh] = useState(false);
 
   const reviewsDeleteHandler = (reviewId) => {
-    fetch("https://plumboy.vercel.app/user/reviews?id=" + reviewId, {
-      method: "DELETE",
-      headers: {
-        "Content-type": "application/json",
-      },
-    })
+    fetch(
+      "https://plumboy-server-three.vercel.app/user/reviews?id=" + reviewId,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-type": "application/json",
+        },
+      }
+    )
       .then((res) => res.json())
       .then((result) => {
         setUserReviews(userReviews.filter((review) => review._id !== reviewId));
@@ -23,7 +26,7 @@ const ReviewsContextProvider = ({ children }) => {
   };
 
   const reviewUpdateHandler = ({ id, comment, rating }) => {
-    fetch(`https://plumboy.vercel.app/user/reviews?id=${id}`, {
+    fetch(`https://plumboy-server-three.vercel.app/user/reviews?id=${id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",

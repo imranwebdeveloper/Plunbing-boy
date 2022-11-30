@@ -18,7 +18,7 @@ const AddReview = ({ id, service }) => {
       rating: e.target.rating.value,
       comment: e.target.comment.value,
     };
-    fetch("https://plumboy.vercel.app/services/reviews", {
+    fetch("https://plumboy-server-three.vercel.app/services/reviews", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

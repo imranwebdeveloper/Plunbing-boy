@@ -17,7 +17,7 @@ const Login = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     const user = { email, password };
-    fetch("https://plumboy.vercel.app/user/login", {
+    fetch("https://plumboy-server-three.vercel.app/user/login", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -40,7 +40,7 @@ const Login = () => {
     loginHandler()
       .then((result) => {
         const { email } = result.user;
-        fetch("https://plumboy.vercel.app/user/login", {
+        fetch("https://plumboy-server-three.vercel.app/user/login", {
           method: "POST",
           headers: {
             "content-type": "application/json",

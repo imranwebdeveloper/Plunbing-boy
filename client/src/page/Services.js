@@ -11,7 +11,7 @@ const Services = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("https://plumboy.vercel.app/services")
+    fetch("https://plumboy-server-three.vercel.app/services")
       .then((res) => res.json())
       .then((data) => {
         setServices(data);

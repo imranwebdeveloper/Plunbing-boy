@@ -136,7 +136,7 @@ app.delete("/user/reviews", async (req, res) => {
 });
 
 // server
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 5001, () => {
   console.log(`Server listening on ${process.env.PORT}`);
   connectDB();
 });
