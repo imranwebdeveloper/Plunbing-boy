@@ -13,7 +13,7 @@ const Reviews = () => {
   const token = localStorage.getItem("plumboy-token");
   useEffect(() => {
     setLoading(true);
-    fetch("https://plumboy-imranwebdeveloper.vercel.app/user/reviews", {
+    fetch("https://plumboy.vercel.app/user/reviews", {
       headers: {
         authorization: `bearer ${token}`,
       },

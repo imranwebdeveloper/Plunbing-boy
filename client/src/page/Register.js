@@ -13,7 +13,7 @@ const Register = () => {
     loginHandler()
       .then((result) => {
         const { displayName, photoURL, email } = result.user;
-        fetch("https://plumboy-imranwebdeveloper.vercel.app/user/register", {
+        fetch("https://plumboy.vercel.app/user/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -45,7 +45,7 @@ const Register = () => {
     const password = e.target.password.value;
     const user = { displayName, photoURL, email, password };
 
-    fetch("https://plumboy-imranwebdeveloper.vercel.app/user/register", {
+    fetch("https://plumboy.vercel.app/user/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

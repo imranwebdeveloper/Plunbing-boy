@@ -17,7 +17,7 @@ const AuthContextProvider = ({ children }) => {
     const token = localStorage.getItem("plumboy-token");
     if (token) {
       setLoading(true);
-      fetch("https://plumboy-imranwebdeveloper.vercel.app/user", {
+      fetch("https://plumboy.vercel.app/user", {
         headers: {
           authorization: `bearer ${token}`,
         },

@@ -12,7 +12,7 @@ const Home = () => {
   useTitle("Home");
 
   useEffect(() => {
-    fetch("https://plumboy-imranwebdeveloper.vercel.app/services?limit=3")
+    fetch("https://plumboy.vercel.app/services?limit=3")
       .then((res) => res.json())
       .then((data) => {
         setServices(data);

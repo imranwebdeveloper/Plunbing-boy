@@ -13,7 +13,7 @@ const AddService = () => {
     const price = e.target.price.value;
     const rating = e.target.rating.value;
     const service = { title, imgUrl, description, price, rating };
-    fetch("https://plumboy-imranwebdeveloper.vercel.app/user/add-service", {
+    fetch("https://plumboy.vercel.app/user/add-service", {
       method: "POST",
       headers: {
         "content-type": "application/json",
