@@ -66,8 +66,9 @@ app.post("/user/register", async (req, res) => {
 // User Login Router
 app.post("/user/login", async (req, res) => {
   const { email, password } = req.body;
-  const cursor = { email: { $eq: email } };
+  const cursor = { email: email };
   const isUser = await users.findOne(cursor);
+  console.log(isUser);
   if (!isUser) {
     return res.send({
       status: false,

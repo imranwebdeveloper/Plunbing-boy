@@ -18,3 +18,9 @@ Live Link : [https://plumboy-2db05.web.app](https://plumboy-2db05.web.app)
 - ExpressJS
 - MongoDB
 - Firebase
+
+## Key Features
+
+- API integrated, user role base authentication system with firebase & email.
+- User can review each service, modify review and add service.
+- Responsive design, dark mode, JWT, descending wise order, toast and more.
